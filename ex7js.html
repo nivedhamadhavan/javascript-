@@ -1,0 +1,24 @@
+<html>
+<head>
+<h2>Driving License</h2>
+</head>
+<body>
+<p>Enter your age</p>
+<input id="age"  />
+<button onclick="license()">ok</button>
+<p id="demo">
+</p>
+<script >
+function license()
+{
+var age;
+age=document.getElementById("age").value;
+if( age > 18)
+{
+Result="Qualified"
+}
+document.getElementById("demo").innerHTML = Result;
+}
+</script>
+</body>
+</html>
