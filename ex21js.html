@@ -1,0 +1,22 @@
+<html>
+<head>
+</head>
+<body>
+<h1>check for only letters in textbox</h1><br><br>
+<label for="numb">Enter a word</label>
+<input id="word">
+<button type="button" onclick="myFunction()">checkfield</button>
+<script>
+function myFunction() {
+var x, text;
+ x = document.getElementById("word").value;
+if (!x.match(/^[a-zA-Z]+$/)) {
+text = "Input should be letters";
+ } else {
+text = "OK PROCCED";
+ }
+alert(text);
+}
+</script>
+</body>
+</html> 
