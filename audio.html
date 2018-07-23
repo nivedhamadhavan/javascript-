@@ -1,0 +1,31 @@
+<html>
+<body>
+
+<audio id="groovemusic">
+  
+  <source src="attention.mp3" type="audio/mpeg">
+ 
+</audio>
+
+<p align="center">ATTENTION {CHARLIE PUTH}</p>
+
+<p align="center"><button onclick="playAudio()" type="button">Play Audio</button><br><br>
+<p align="center"><button onclick="pauseAudio()" type="button">Pause Audio</button><br><br>
+<p align="center"><button onclick="stopAudio()" type="button">Stop Audio</button><br><br>
+
+<script>
+var s= document.getElementById("groovemusic");
+function playAudio() { 
+    s.play(); 
+} 
+function pauseAudio() { 
+    s.pause(); 
+} 
+function stopAudio(){
+    s.pause();
+    s.currentTime = 0;
+}
+</script>
+
+</body>
+</html>

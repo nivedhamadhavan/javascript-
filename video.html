@@ -1,0 +1,26 @@
+<html>
+<body> 
+
+<p align="center"><button onclick="playVid()" type="button">Play Video</button><br><br>
+<p align="center"><button onclick="pauseVid()" type="button">Pause Video</button><br><br>
+<p align="center"><button onclick="stopVid()" type="button">Stop Video</button><br>
+<br> 
+
+<video id="VideoPlayer" width="800" height="500">
+  <source src="blossoms.mp4" type="video/mp4">
+</video>
+<script> 
+var vid = document.getElementById("VideoPlayer"); 
+function playVid() { 
+    vid.play(); 
+} 
+function pauseVid() { 
+    vid.pause(); 
+}
+function stopVid() {
+    vid.pause();
+    vid.currentTime=0; 
+}
+</script> 
+</body> 
+</html>
